@@ -18,6 +18,15 @@ function getCookie(cookieName) {
   return "";
 }
 
-// Usage example:
-var myCookie = getCookie("JSESSIONID");
-console.log(myCookie);
+// Function to handle button click event
+function handleButtonClick() {
+  var myCookie = getCookie("JSESSIONID");
+  console.log(myCookie);
+  // Add your code here to perform the desired action with the cookie value
+}
+
+// Get the button element
+var button = document.getElementById('my_button');
+
+// Add an event listener to the button
+button.addEventListener('click', handleButtonClick);
